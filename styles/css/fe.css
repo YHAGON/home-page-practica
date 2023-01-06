@@ -95,8 +95,6 @@
   }
 }
 
-
-
 .buttons {
   display: flex;
   flex-direction: row;
@@ -231,6 +229,7 @@
   font-weight: 800;
   font-size: 1.25rem;
   margin: 0;
+  display: flex;
 }
 @media (min-width: 768px) {
   .card__subtitle {
@@ -428,13 +427,6 @@
   color: var(--secondary-text-color);
 }
 
-.wave {
-  margin: 0;
-}
-.wave__img {
-  display: block;
-  width: 100%;
-}
 
 .d-none {
   display: none;
