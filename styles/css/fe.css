@@ -1,3 +1,11 @@
+@import './modules/header.css';
+@import './modules/variables.css';
+
+
+.body {
+  font-family: var(--primary-font-family);
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -46,10 +54,11 @@
   background-image: linear-gradient(transparent, var(--primary-theme-color));
 }
 .section__title {
-  text-shadow: 0 0 0.125rem var(--primary-highlight-color)/*,0 0 0.25rem var(--primary-highlight-color)*/;
+  text-shadow: 0 0 0.125rem var(--primary-highlight-color);
   font-weight: 800;
   font-size: 1.75rem;
   margin: 0;
+  text-align: center;
 }
 
 .container {
@@ -82,7 +91,8 @@
 
 .elements {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: stretch;
   justify-content: flex-start;
   gap: 1rem;
@@ -143,7 +153,8 @@
 .button--primary {
   background-color: var(--primary-button-color);
   border: 0.0625rem solid var(--primary-button-color);
-  color: var(--reverse-primary-text-color);
+  color: var(--primary-text-color);
+
 }
 .button--primary:hover {
   box-shadow: 0 0 0.5rem 0 var(--primary-button-color);
@@ -160,12 +171,44 @@
   background-color: transparent;
   color: var(--primary-text-color);
 }
-
+.button--contact {
+  background-color: #395B64;
+}
 .card {
   box-shadow: 0 0 0.125rem 0 var(--reverse-primary-shadow-color);
   border-radius: var(--primary-border-radius);
   overflow: hidden;
   transition: box-shadow 0.25s;
+  height: 100%;
+  flex: auto;
+}
+.card--support {
+  flex: 1;
+  max-height: 49rem;
+  overflow-y: auto; 
+}
+.card--support {
+  flex: auto;
+}
+@media (min-width: 768px) {
+  .card--support {
+    max-height: 42rem;
+    flex: 1;
+  }
+  .card--support:nth-child(3) {
+    flex: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card--support {
+    flex: 1;
+    max-height: 49rem;
+    overflow-y: auto; 
+  }
+  .card--support:nth-child(3) {
+    flex: 1;
+  }
 }
 .card:hover {
   box-shadow: 0 0 0.125rem 0 var(--primary-highlight-color);
@@ -175,6 +218,7 @@
   box-shadow: 0 0 0.125rem 0.125rem var(--reverse-primary-shadow-color);
   max-width: 320px;
   text-align: center;
+  color: var(--primary-theme-color);
 }
 @media (min-width: 768px) {
   .card--hero {
@@ -221,6 +265,10 @@
   gap: 0.25rem;
   background-color: var(--secondary-shadow-color);
   padding: 1rem;
+  height: 50%;
+}
+.card__body--benefit {
+  background-color: var(--primary-theme-color)
 }
 .card__body--lg {
   gap: 0.5rem;
@@ -410,7 +458,7 @@
   transition: box-shadow 0.25s;
 }
 .form__group:hover {
-  box-shadow: 0 0 0 0.125rem var(--primary-highlight-color), 0 0 0 0.25rem var(--primary-highlight-color);
+  box-shadow: 0 0 0 0.125rem var(--primary-theme-color), 0 0 0 0.25rem var(--primary-theme-color);
 }
 .form__input {
   background-color: transparent;
@@ -449,4 +497,3 @@
   }
 }
 
-/*# sourceMappingURL=fe.css.map */
