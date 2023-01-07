@@ -42,23 +42,23 @@
     max-width: 400px;
     font-size: 50px;
     font-weight: 900;
-    color: rgb(12, 239, 232);
+    color:#2c3333;
 }
 
 .cover h2{
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 900;
-    color: #7e0666;
+    color:#2666cf;
     margin-top: -30px;
 }
 
 .cover p{
     margin-top: 10px;
-    color: rgb(12, 239, 232);
+    color: #000
 }
 .cover a{
     margin-top: 25px;
-    color: #7e0666;
+    color: #2666cf;
 }
 
 .cover input[type="button"]{

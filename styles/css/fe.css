@@ -23,7 +23,7 @@
 }
 .section--profile {
   position: relative;
-  background-image: url("/assets/img/468-degradados.png");
+  background-image: url("/assets/img/fondito_1.png");
   background-size: cover;
   background-position: center;
 }
@@ -46,7 +46,7 @@
   background-image: linear-gradient(transparent, var(--primary-theme-color));
 }
 .section__title {
-  text-shadow: 0 0 0.125rem var(--primary-highlight-color), 0 0 0.25rem var(--primary-highlight-color);
+  text-shadow: 0 0 0.125rem var(--primary-highlight-color)/*,0 0 0.25rem var(--primary-highlight-color)*/;
   font-weight: 800;
   font-size: 1.75rem;
   margin: 0;
