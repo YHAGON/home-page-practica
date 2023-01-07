@@ -61,7 +61,7 @@
     color: #2666cf;
 }
 
-.cover input[type="button"]{
+/*.cover input[type="button"]{
     padding: 10px 40px;
     margin-top: 40px;
     font-size: 18px;
@@ -73,11 +73,11 @@
     box-shadow: 1px 1px 30px -5px #20202049;
     cursor: pointer;
     transition: box-shadow 500ms;
-}
+}*/
 
-.cover input[type="button"]:hover{
+/*.cover input[type="button"]:hover{
     box-shadow: 1px 1px 30px -5px #20202085;
-}
+}*/
 
 
 .container__vector{
